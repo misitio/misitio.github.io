@@ -46,7 +46,7 @@
 
       <header>
         <div class="h-wrap">
-          <h1 class="title"><a href="" title="Back to Homepage">MISIT.io</a></h1>
+          <h1 class="title"><a href="/" title="Back to Homepage">MISIT.io</a></h1>
           <!--a class="menu-icon" title="Open Bio"><span class="lines"></span></a-->
         </div>
       </header>
@@ -63,7 +63,61 @@
     </div>
     <h1 class="page-title" itemprop="name headline">Introduccion a Node.JS</h1>
     <div itemprop="articleBody">
-      <p>Some test post</p>
+      <p>Hoy en dia hay muchos lenguajes de programacion y con los tiempos actuales que se tiende a ir por el lado web, es muy dificil mantener una webapp porque hay muchos lenguajes que se manejan, por ejemplo esta el LAMP, que es Linux+Apache+MySQL+PHP, son muchos lenguajes verdad?. Para esto esta Node.JS.</p>
+
+<h3 id="que-es-nodejs">Que es Node.JS</h3>
+
+<p>Node.JS es una plataforma que utiliza el motor javascript de chrome, basicamente lo que hace Node.JS es traer javascript al lado servidor.</p>
+
+<h3 id="historia">Historia</h3>
+
+<p>Node.JS fue creado por Ryan Dahl en el 2009 y esta apadrinado por Joyent, una empresa que en la actualidad realiza servicios empresariales basados en Node.JS.</p>
+
+<p>Algunas empresas que utilizan Node.JS en produccion son:</p>
+
+<ul>
+  <li>LinkedIn</li>
+  <li>Ebay</li>
+  <li>The New York Times</li>
+  <li>Muchos mas en <a href="http://www.nodejs.org/industry/">nodejs.org</a></li>
+</ul>
+
+<p><img src="/assets/img/nodejs-webpage.png" alt="Node.JS Webpage" title="Node.JS Webpage" /></p>
+
+<h3 id="instalacion-de-nodejs-en-ubuntu">Instalacion de Node.JS en Ubuntu</h3>
+
+<p>Ya hablado un poco de Node.JS, ahora vamos a instalarlo en Ubuntu.</p>
+
+<p>Ubuntu viene con los repositorios de Node.JS, pero estan desactualizados, ya que la comunidad de Node.JS suele lanzar nuevas versiones en muy poco tiempo.</p>
+
+<p>Para esto usaremos el repositorio de Chris Lea que se instala siguiendo los siguientes comandos en la terminal:</p>
+
+<p><code>
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+</code></p>
+
+<p>El primer comando añade el repositorio y el segundo hace un update de dependencias para instalarlo. Si al correr el primer comando te da un error, hay que correr el siguiente comando:</p>
+
+<p><code>
+sudo apt-get install python-software-properties
+</code></p>
+
+<p>Que instala el comando para añadir repositorios externos facilmente y ya habiendose instalado, se procede a correr los comandos anteriores.</p>
+
+<p>Ahora se instala Node.JS</p>
+
+<p><code>
+sudo apt-get install nodejs npm
+</code></p>
+
+<p>Que instalara Node.JS y el manejador de paquetes de Node.JS NPM</p>
+
+<h3 id="npm">NPM</h3>
+
+<p>NPM es el manejador de paquetes oficial de Node.JS, que se encarga de obtener dependencias de paquetes disponibles, para esto esta la pagina npmjs.org, que ahi puedes buscar de los miles de paquetes disponibles por la comunidad.</p>
+
+<p><img src="/assets/img/npmjs.png" alt="npmjs.org" title="npmjs.org" /></p>
 
     </div>
     <div class="feat share">
