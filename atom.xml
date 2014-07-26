@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <feed xmlns="http://www.w3.org/2005/Atom">
-  <title>MISIT.io Blog</title>
+  <title>MISIT.io</title>
   <id>http://misitio.github.io/</id>
   <link href="http://misitio.github.io/" />
   <link href="http://misitio.github.io//atom.xml" rel="self" />
-  <updated>2014-07-26T15:21:45-05:00</updated>
-  <rights>Copyright 2014, John Doge</rights>
+  <updated>2014-07-26T16:54:56-05:00</updated>
+  <rights>Copyright 2014, Samuel Casas</rights>
   <author>
-    <name>John Doge</name>
+    <name>Samuel Casas</name>
   </author>
   
     <entry>
@@ -49,7 +49,7 @@
       <id>http://misitio.github.io//2014/01/28/welcome-to-jekyll/</id>
       <updated>2014-01-28T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -105,7 +105,7 @@
   &lt;span class=&quot;k&quot;&gt;return&lt;/span&gt; &lt;span class=&quot;nx&quot;&gt;blocks&lt;/span&gt;&lt;span class=&quot;p&quot;&gt;;&lt;/span&gt;
 &lt;span class=&quot;p&quot;&gt;};&lt;/span&gt;&lt;/code&gt;&lt;/pre&gt;&lt;/div&gt;
 
-&lt;p&gt;&lt;img src=&quot;//assets/img/img2.jpg&quot; /&gt;&lt;/p&gt;
+&lt;p&gt;&lt;img src=&quot;/assets/img/img2.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;h1 id=&quot;heading-1&quot;&gt;Heading 1&lt;/h1&gt;
 &lt;p&gt;Nor again is there anyone who loves or pursues or desires to obtain pain of itself, because it is pain, but because occasionally circumstances occur in which toil and pain can procure him some great pleasure.&lt;/p&gt;
@@ -122,14 +122,14 @@
       <id>http://misitio.github.io//2014/01/27/hikari-styling-guide/</id>
       <updated>2014-01-27T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
     <entry>
       <title>Moving to Tokyo, yeeha!</title>
       <link href="http://misitio.github.io//2014/01/22/moving-to-tokyo/" />
-      <summary type="html">&lt;p&gt;&lt;img src=&quot;//assets/img/img1.jpg&quot; /&gt;&lt;/p&gt;
+      <summary type="html">&lt;p&gt;&lt;img src=&quot;/assets/img/img1.jpg&quot; /&gt;&lt;/p&gt;
 
 &lt;p&gt;One morning, when Gregor Samsa woke from troubled dreams, he found himself transformed in his bed into a horrible vermin.&lt;/p&gt;
 
@@ -154,7 +154,7 @@
       <id>http://misitio.github.io//2014/01/22/moving-to-tokyo/</id>
       <updated>2014-01-22T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -182,7 +182,7 @@
       <id>http://misitio.github.io//2014/01/19/weekend-in-the-desert/</id>
       <updated>2014-01-19T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -210,7 +210,7 @@
       <id>http://misitio.github.io//2014/01/10/so-much-to-do-so-little-time/</id>
       <updated>2014-01-10T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -228,7 +228,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       <id>http://misitio.github.io//2014/01/08/setting-up-jekyll-on-github-pages/</id>
       <updated>2014-01-08T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -256,7 +256,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       <id>http://misitio.github.io//2014/01/06/how-backbone-changed-my-life/</id>
       <updated>2014-01-06T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -282,7 +282,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       <id>http://misitio.github.io//2014/01/05/perception-of-design/</id>
       <updated>2014-01-05T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
@@ -310,7 +310,7 @@ To add new posts, simply add a file in the &lt;code&gt;_posts&lt;/code&gt; direc
       <id>http://misitio.github.io//2014/01/03/going-back-2013/</id>
       <updated>2014-01-03T10:57:51-06:00</updated>
       <author>
-        <name>John Doge</name>
+        <name>Samuel Casas</name>
       </author>
     </entry>
   
