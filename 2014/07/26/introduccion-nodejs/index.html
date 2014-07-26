@@ -67,7 +67,7 @@
 
 <h3 id="que-es-nodejs">Que es Node.JS</h3>
 
-<p>Node.JS es una plataforma que utiliza el motor javascript de chrome, basicamente lo que hace Node.JS es traer javascript al lado servidor.</p>
+<p>Node.JS es una plataforma que utiliza el motor javascript de chrome, basicamente lo que hace Node.JS es traer javascript al lado servidor, puede ser utilizado para crear desde una aplicacion web hasta complejos procesadores de archivos.</p>
 
 <h3 id="historia">Historia</h3>
 
@@ -115,9 +115,32 @@ sudo apt-get install nodejs npm
 
 <h3 id="npm">NPM</h3>
 
-<p>NPM es el manejador de paquetes oficial de Node.JS, que se encarga de obtener dependencias de paquetes disponibles, para esto esta la pagina npmjs.org, que ahi puedes buscar de los miles de paquetes disponibles por la comunidad.</p>
+<p>NPM es el manejador de paquetes oficial de Node.JS, que se encarga de obtener dependencias de paquetes disponibles, para esto esta la pagina <a href="http://npmjs.org">npmjs.org</a>, que ahi puedes buscar de los miles de paquetes disponibles por la comunidad.</p>
 
 <p><img src="/assets/img/npmjs.png" alt="npmjs.org" title="npmjs.org" /></p>
+
+<p>Node.JS y NPM utilizan un archivo llamado package.json que es la raiz de que dependencias se necesitan el el proyecto, <a href="https://www.npmjs.org/doc/files/package.json.html">esta es la especificacion del archivo</a>.</p>
+
+<h3 id="hello-world-en-nodejs">Hello World en Node.JS</h3>
+
+<p>Ya instalado Node.JS, vamos a hacer un pequeño Hello World en un servidor web sencillo.</p>
+
+<p>Vamos a crear un archivo llamado hello.js con el siguiente contenido.</p>
+
+<p><code>
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(8888, '127.0.0.1');
+console.log('Servidor en http://127.0.0.1:8888/');
+</code></p>
+
+<p>y se corre en la terminal con el siguiente comando</p>
+
+<p><code>
+node hello.js
+</code></p>
 
     </div>
     <div class="feat share">
