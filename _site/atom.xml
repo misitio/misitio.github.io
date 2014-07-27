@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+  <title>MISIT.io</title>
+  <id>http://misitio.github.io/</id>
+  <link href="http://misitio.github.io/" />
+  <link href="http://misitio.github.io//atom.xml" rel="self" />
+  <updated>2014-07-27T13:26:33-05:00</updated>
+  <rights>Copyright 2014, Samuel Casas</rights>
+  <author>
+    <name>Samuel Casas</name>
+  </author>
+  
+    <entry>
+      <title>Introduccion a Node.JS</title>
+      <link href="http://misitio.github.io//2014/07/26/introduccion-nodejs/" />
+      <summary type="html">&lt;p&gt;Hoy en dia hay muchos lenguajes de programacion y con los tiempos actuales que se tiende a ir por el lado web, es muy dificil mantener una webapp porque hay muchos lenguajes que se manejan, por ejemplo esta el LAMP, que es Linux+Apache+MySQL+PHP, son muchos lenguajes verdad?. Para esto esta Node.JS.&lt;/p&gt;
+
+&lt;h3 id=&quot;que-es-nodejs&quot;&gt;Que es Node.JS&lt;/h3&gt;
+
+&lt;p&gt;Node.JS es una plataforma que utiliza el motor javascript de chrome, basicamente lo que hace Node.JS es traer javascript al lado servidor, puede ser utilizado para crear desde una aplicacion web hasta complejos procesadores de archivos.&lt;/p&gt;
+
+&lt;h3 id=&quot;historia&quot;&gt;Historia&lt;/h3&gt;
+
+&lt;p&gt;Node.JS fue creado por Ryan Dahl en el 2009 y esta apadrinado por Joyent, una empresa que en la actualidad realiza servicios empresariales basados en Node.JS.&lt;/p&gt;
+
+&lt;p&gt;Algunas empresas que utilizan Node.JS en produccion son:&lt;/p&gt;
+
+&lt;ul&gt;
+  &lt;li&gt;LinkedIn&lt;/li&gt;
+  &lt;li&gt;Ebay&lt;/li&gt;
+  &lt;li&gt;The New York Times&lt;/li&gt;
+  &lt;li&gt;Muchos mas en &lt;a href=&quot;http://www.nodejs.org/industry/&quot;&gt;nodejs.org&lt;/a&gt;&lt;/li&gt;
+&lt;/ul&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/nodejs-webpage.png&quot; alt=&quot;Node.JS Webpage&quot; title=&quot;Node.JS Webpage&quot; /&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;instalacion-de-nodejs-en-ubuntu&quot;&gt;Instalacion de Node.JS en Ubuntu&lt;/h3&gt;
+
+&lt;p&gt;Ya hablado un poco de Node.JS, ahora vamos a instalarlo en Ubuntu.&lt;/p&gt;
+
+&lt;p&gt;Ubuntu viene con los repositorios de Node.JS, pero estan desactualizados, ya que la comunidad de Node.JS suele lanzar nuevas versiones en muy poco tiempo.&lt;/p&gt;
+
+&lt;p&gt;Para esto usaremos el repositorio de Chris Lea que se instala siguiendo los siguientes comandos en la terminal:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;El primer comando añade el repositorio y el segundo hace un update de dependencias para instalarlo. Si al correr el primer comando te da un error, hay que correr el siguiente comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+sudo apt-get install python-software-properties
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Que instala el comando para añadir repositorios externos facilmente y ya habiendose instalado, se procede a correr los comandos anteriores.&lt;/p&gt;
+
+&lt;p&gt;Ahora se instala Node.JS&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+sudo apt-get install nodejs npm
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Que instalara Node.JS y el manejador de paquetes de Node.JS NPM.&lt;/p&gt;
+
+&lt;p&gt;Para instalar en otras distros o sistemas operativos &lt;a href=&quot;https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager&quot;&gt;Aqui&lt;/a&gt;&lt;/p&gt;
+
+&lt;h3 id=&quot;npm&quot;&gt;NPM&lt;/h3&gt;
+
+&lt;p&gt;NPM es el manejador de paquetes oficial de Node.JS, que se encarga de obtener dependencias de paquetes disponibles, para esto esta la pagina &lt;a href=&quot;http://npmjs.org&quot;&gt;npmjs.org&lt;/a&gt;, que ahi puedes buscar de los miles de paquetes disponibles por la comunidad.&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/npmjs.png&quot; alt=&quot;npmjs.org&quot; title=&quot;npmjs.org&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;Node.JS y NPM utilizan un archivo llamado package.json que es la raiz de que dependencias se necesitan el el proyecto, &lt;a href=&quot;https://www.npmjs.org/doc/files/package.json.html&quot;&gt;esta es la especificacion del archivo&lt;/a&gt;.&lt;/p&gt;
+
+&lt;h3 id=&quot;hello-world-en-nodejs&quot;&gt;Hello World en Node.JS&lt;/h3&gt;
+
+&lt;p&gt;Ya instalado Node.JS, vamos a hacer un pequeño Hello World en un servidor web sencillo.&lt;/p&gt;
+
+&lt;p&gt;Vamos a crear un archivo llamado hello.js con el siguiente contenido:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+var http = require(&#39;http&#39;);
+http.createServer(function (req, res) {
+  res.writeHead(200, {&#39;Content-Type&#39;: &#39;text/plain&#39;});
+  res.end(&#39;Hello World\n&#39;);
+}).listen(8888, &#39;127.0.0.1&#39;);
+console.log(&#39;Servidor en http://127.0.0.1:8888/&#39;);
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Se corre en la terminal con el siguiente comando:&lt;/p&gt;
+
+&lt;p&gt;&lt;code&gt;
+node hello.js
+&lt;/code&gt;&lt;/p&gt;
+
+&lt;p&gt;Y ve a la siguiente direccion &lt;a href=&quot;http://localhost:8888/&quot;&gt;http://localhost:8888/&lt;/a&gt; y se vera lo siguiente:&lt;/p&gt;
+
+&lt;p&gt;&lt;img src=&quot;/assets/img/hello-world.png&quot; alt=&quot;Hello World&quot; title=&quot;Hello World&quot; /&gt;&lt;/p&gt;
+
+&lt;p&gt;El repositorio del codigo visto en este post esta en &lt;a href=&quot;https://github.com/misitio/nodejs-helloworld&quot;&gt;Github&lt;/a&gt;&lt;/p&gt;
+</summary>
+      <id>http://misitio.github.io//2014/07/26/introduccion-nodejs/</id>
+      <updated>2014-07-26T11:57:51-05:00</updated>
+      <author>
+        <name>Samuel Casas</name>
+      </author>
+    </entry>
+  
+</feed>

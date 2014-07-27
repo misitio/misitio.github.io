@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+      <title>MISIT.io - Blog informativo acerca de MISIT.io</title>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+      <meta http-equiv="content-language" content="en-gb" />
+      <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
+      <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+      <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
+      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
+  </head>
+
+  <body>
+    <!--[if lt IE 7]>
+        <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+    <![endif]-->
+
+    <!--div class="off-canvas">
+      <figure class="avatar">
+        <img src="/assets/img/avatar.jpg" alt="Picture" title="That's me, Samuel Casas.">
+      </figure>
+      <div class="bio">
+          <h1>Hola, soy Samuel Casas.</h1>
+          <p>I'm a dog. I develop things. This is my blog so why don't you close this damn side panel (cursed by most UX Designers but I don't care, I do whatever I want) and start reading my awesome stuff?</p>
+      </div>
+      <nav>
+        <h6>Sigueme en</h6>
+        <ul>
+          
+          
+          <li><a target="_blank" href="misitio">Github</a></li>
+          
+          
+          
+        </ul>
+      </nav>
+    </div-->
+
+
+    <div class="site-wrapper">
+
+      <header>
+        <div class="h-wrap">
+          <h1 class="title"><a href="/" title="Back to Homepage">MISIT.io</a></h1>
+          <!--a class="menu-icon" title="Open Bio"><span class="lines"></span></a-->
+        </div>
+      </header>
+
+      <main>
+        <section class="single-wrap">
+  <article class="single-content" itemscope itemtype="http://schema.org/BlogPosting">
+    <div class="feat">
+      <h5 class="page-date">
+        <time datetime="2014-07-26T11:57:51-05:00" itemprop="datePublished">
+          26 July 2014
+        </time>
+      </h5>
+    </div>
+    <h1 class="page-title" itemprop="name headline">Introduccion a Node.JS</h1>
+    <div itemprop="articleBody">
+      <p>Hoy en dia hay muchos lenguajes de programacion y con los tiempos actuales que se tiende a ir por el lado web, es muy dificil mantener una webapp porque hay muchos lenguajes que se manejan, por ejemplo esta el LAMP, que es Linux+Apache+MySQL+PHP, son muchos lenguajes verdad?. Para esto esta Node.JS.</p>
+
+<h3 id="que-es-nodejs">Que es Node.JS</h3>
+
+<p>Node.JS es una plataforma que utiliza el motor javascript de chrome, basicamente lo que hace Node.JS es traer javascript al lado servidor, puede ser utilizado para crear desde una aplicacion web hasta complejos procesadores de archivos.</p>
+
+<h3 id="historia">Historia</h3>
+
+<p>Node.JS fue creado por Ryan Dahl en el 2009 y esta apadrinado por Joyent, una empresa que en la actualidad realiza servicios empresariales basados en Node.JS.</p>
+
+<p>Algunas empresas que utilizan Node.JS en produccion son:</p>
+
+<ul>
+  <li>LinkedIn</li>
+  <li>Ebay</li>
+  <li>The New York Times</li>
+  <li>Muchos mas en <a href="http://www.nodejs.org/industry/">nodejs.org</a></li>
+</ul>
+
+<p><img src="/assets/img/nodejs-webpage.png" alt="Node.JS Webpage" title="Node.JS Webpage" /></p>
+
+<h3 id="instalacion-de-nodejs-en-ubuntu">Instalacion de Node.JS en Ubuntu</h3>
+
+<p>Ya hablado un poco de Node.JS, ahora vamos a instalarlo en Ubuntu.</p>
+
+<p>Ubuntu viene con los repositorios de Node.JS, pero estan desactualizados, ya que la comunidad de Node.JS suele lanzar nuevas versiones en muy poco tiempo.</p>
+
+<p>Para esto usaremos el repositorio de Chris Lea que se instala siguiendo los siguientes comandos en la terminal:</p>
+
+<p><code>
+sudo add-apt-repository ppa:chris-lea/node.js
+sudo apt-get update
+</code></p>
+
+<p>El primer comando añade el repositorio y el segundo hace un update de dependencias para instalarlo. Si al correr el primer comando te da un error, hay que correr el siguiente comando:</p>
+
+<p><code>
+sudo apt-get install python-software-properties
+</code></p>
+
+<p>Que instala el comando para añadir repositorios externos facilmente y ya habiendose instalado, se procede a correr los comandos anteriores.</p>
+
+<p>Ahora se instala Node.JS</p>
+
+<p><code>
+sudo apt-get install nodejs npm
+</code></p>
+
+<p>Que instalara Node.JS y el manejador de paquetes de Node.JS NPM.</p>
+
+<p>Para instalar en otras distros o sistemas operativos <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">Aqui</a></p>
+
+<h3 id="npm">NPM</h3>
+
+<p>NPM es el manejador de paquetes oficial de Node.JS, que se encarga de obtener dependencias de paquetes disponibles, para esto esta la pagina <a href="http://npmjs.org">npmjs.org</a>, que ahi puedes buscar de los miles de paquetes disponibles por la comunidad.</p>
+
+<p><img src="/assets/img/npmjs.png" alt="npmjs.org" title="npmjs.org" /></p>
+
+<p>Node.JS y NPM utilizan un archivo llamado package.json que es la raiz de que dependencias se necesitan el el proyecto, <a href="https://www.npmjs.org/doc/files/package.json.html">esta es la especificacion del archivo</a>.</p>
+
+<h3 id="hello-world-en-nodejs">Hello World en Node.JS</h3>
+
+<p>Ya instalado Node.JS, vamos a hacer un pequeño Hello World en un servidor web sencillo.</p>
+
+<p>Vamos a crear un archivo llamado hello.js con el siguiente contenido:</p>
+
+<p><code>
+var http = require('http');
+http.createServer(function (req, res) {
+  res.writeHead(200, {'Content-Type': 'text/plain'});
+  res.end('Hello World\n');
+}).listen(8888, '127.0.0.1');
+console.log('Servidor en http://127.0.0.1:8888/');
+</code></p>
+
+<p>Se corre en la terminal con el siguiente comando:</p>
+
+<p><code>
+node hello.js
+</code></p>
+
+<p>Y ve a la siguiente direccion <a href="http://localhost:8888/">http://localhost:8888/</a> y se vera lo siguiente:</p>
+
+<p><img src="/assets/img/hello-world.png" alt="Hello World" title="Hello World" /></p>
+
+<p>El repositorio del codigo visto en este post esta en <a href="https://github.com/misitio/nodejs-helloworld">Github</a></p>
+
+    </div>
+    <div class="feat share">
+      <a href="http://twitter.com/share" class="popup">
+        <span class="icon-twitter"></span>
+      </a>
+    </div>
+    
+    
+  </article>
+</section>
+
+      </main>
+
+      <footer>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; Samuel Casas</small>
+      </footer>
+
+    </div> 
+    
+
+    <script src="/js/main.js"></script>
+    
+    
+
+  </body>
+</html>
