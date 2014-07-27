@@ -135,14 +135,13 @@ sudo apt-get install nodejs npm
 
 <p>Vamos a crear un archivo llamado hello.js con el siguiente contenido:</p>
 
-<p><code>
-var http = require('http'); // se llama a la dependencia http
+<pre><code>var http = require('http'); // se llama a la dependencia http
 http.createServer(function (req, res) { // se crea el servidor: req=request(solicitud), res=response(respuesta)
   res.writeHead(200, {'Content-Type': 'text/plain'}); // se agrega un header para señalar que es texto
   res.end('Hello World\n'); // se cierra la respuesta a la llamada enviando texto
 }).listen(8888, '127.0.0.1'); // solo escucha solicitudes de localhost con el puerto 8888
 console.log('Servidor en http://127.0.0.1:8888/');
-</code></p>
+</code></pre>
 
 <p>Se corre en la terminal con el siguiente comando:</p>
 
