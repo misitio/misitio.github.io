@@ -4,14 +4,14 @@
 <!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
 <!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
   <head>
-      <title>MISIT.io - Blog informativo acerca de MISIT.io</title>
+      <title>hikari - Fluid, responsive blog theme for Jekyll</title>
       <meta charset="utf-8">
       <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
       <meta http-equiv="content-language" content="en-gb" />
       <meta name="description" content="Fluid, responsive blog theme for Jekyll.">
       <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
       <link href="//fonts.googleapis.com/css?family=Open+Sans:400italic,400,300,700|Lora:400,700,400italic" rel="stylesheet" type="text/css">
-      <link rel="stylesheet" type="text/css" href="/css/main.css" />
+      <link rel="stylesheet" type="text/css" href="/hikari-for-Jekyll/css/main.css" />
       <link href="atom.xml" type="application/atom+xml" rel="alternate" title="Site ATOM Feed">
   </head>
 
@@ -20,34 +20,40 @@
         <p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
     <![endif]-->
 
-    <!--div class="off-canvas">
+    <div class="off-canvas">
       <figure class="avatar">
-        <img src="/assets/img/avatar.jpg" alt="Picture" title="That's me, Samuel Casas.">
+        <img src="/hikari-for-Jekyll/assets/img/avatar.jpg" alt="Picture" title="That's me, John Doge.">
       </figure>
       <div class="bio">
-          <h1>Hola, soy Samuel Casas.</h1>
+          <h1>Hi, I'm John Doge.</h1>
           <p>I'm a dog. I develop things. This is my blog so why don't you close this damn side panel (cursed by most UX Designers but I don't care, I do whatever I want) and start reading my awesome stuff?</p>
       </div>
       <nav>
-        <h6>Sigueme en</h6>
+        <h6>Follow me on</h6>
         <ul>
           
+          <li><a target="_blank" href="http://twitter.com/mx3m">Twitter</a></li>
           
-          <li><a target="_blank" href="misitio">Github</a></li>
+          
+          <li><a target="_blank" href="m3xm">Github</a></li>
           
           
+          <li><a target="_blank" href="m3xm">Dribbble</a></li>
+          
+          
+          <li><a target="_blank" href="m3xm">Instagram</a></li>
           
         </ul>
       </nav>
-    </div-->
+    </div>
 
 
     <div class="site-wrapper">
 
       <header>
         <div class="h-wrap">
-          <h1 class="title"><a href="/" title="Back to Homepage">MISIT.io</a></h1>
-          <!--a class="menu-icon" title="Open Bio"><span class="lines"></span></a-->
+          <h1 class="title"><a href="/hikari-for-Jekyll" title="Back to Homepage">hikari</a></h1>
+          <a class="menu-icon" title="Open Bio"><span class="lines"></span></a>
         </div>
       </header>
 
@@ -130,11 +136,11 @@ sudo apt-get install nodejs npm
 <p>Vamos a crear un archivo llamado hello.js con el siguiente contenido:</p>
 
 <p><code>
-var http = require('http');
-http.createServer(function (req, res) {
-  res.writeHead(200, {'Content-Type': 'text/plain'});
-  res.end('Hello World\n');
-}).listen(8888, '127.0.0.1');
+var http = require('http'); // se llama a la dependencia http
+http.createServer(function (req, res) { // se crea el servidor: req=request(solicitud), res=response(respuesta)
+  res.writeHead(200, {'Content-Type': 'text/plain'}); // se agrega un header para señalar que es texto
+  res.end('Hello World\n'); // se cierra la respuesta a la llamada enviando texto
+}).listen(8888, '127.0.0.1'); // solo escucha solicitudes de localhost con el puerto 8888
 console.log('Servidor en http://127.0.0.1:8888/');
 </code></p>
 
@@ -147,6 +153,8 @@ node hello.js
 <p>Y ve a la siguiente direccion <a href="http://localhost:8888/">http://localhost:8888/</a> y se vera lo siguiente:</p>
 
 <p><img src="/assets/img/hello-world.png" alt="Hello World" title="Hello World" /></p>
+
+<p>En los siguientes posts veremos como crear un Blog simple con Node.JS en el lado servidor, MongoDB como base de datos y AngularJS en el lado navegador para asi crear una experiencia totalmente Javascript.</p>
 
 <p>El repositorio del codigo visto en este post esta en <a href="https://github.com/misitio/nodejs-helloworld">Github</a></p>
 
@@ -164,14 +172,24 @@ node hello.js
       </main>
 
       <footer>
-        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; Samuel Casas</small>
+        <small>Powered by Jekyll - Theme: <a href="https://github.com/m3xm/hikari-for-Jekyll">hikari</a> - &copy; John Doge</small>
       </footer>
 
     </div> 
     
 
-    <script src="/js/main.js"></script>
+    <script src="/hikari-for-Jekyll/js/main.js"></script>
     
+    
+      <script>
+        (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+        (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+        m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+        })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+        ga('create', 'UA-47727049-1', 'm3xm.github.io');
+        ga('send', 'pageview');
+      </script>
     
 
   </body>
