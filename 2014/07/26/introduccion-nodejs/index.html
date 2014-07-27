@@ -111,7 +111,9 @@ sudo apt-get install python-software-properties
 sudo apt-get install nodejs npm
 </code></p>
 
-<p>Que instalara Node.JS y el manejador de paquetes de Node.JS NPM</p>
+<p>Que instalara Node.JS y el manejador de paquetes de Node.JS NPM.</p>
+
+<p>Para instalar en otras distros o sistemas operativos <a href="https://github.com/joyent/node/wiki/Installing-Node.js-via-package-manager">Aqui</a></p>
 
 <h3 id="npm">NPM</h3>
 
@@ -125,7 +127,7 @@ sudo apt-get install nodejs npm
 
 <p>Ya instalado Node.JS, vamos a hacer un pequeño Hello World en un servidor web sencillo.</p>
 
-<p>Vamos a crear un archivo llamado hello.js con el siguiente contenido.</p>
+<p>Vamos a crear un archivo llamado hello.js con el siguiente contenido:</p>
 
 <p><code>
 var http = require('http');
@@ -136,11 +138,17 @@ http.createServer(function (req, res) {
 console.log('Servidor en http://127.0.0.1:8888/');
 </code></p>
 
-<p>y se corre en la terminal con el siguiente comando</p>
+<p>Se corre en la terminal con el siguiente comando:</p>
 
 <p><code>
 node hello.js
 </code></p>
+
+<p>Y ve a la siguiente direccion <a href="http://localhost:8888/">http://localhost:8888/</a> y se vera lo siguiente:</p>
+
+<p><img src="/assets/img/hello-world.png" alt="Hello World" title="Hello World" /></p>
+
+<p>El repositorio del codigo visto en este post esta en <a href="https://github.com/misitio/nodejs-helloworld">Github</a></p>
 
     </div>
     <div class="feat share">
